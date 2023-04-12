@@ -20,11 +20,40 @@ namespace CadastroDeUsuariosAPI.Controllers
 			return Ok(usuarios);
 		}
 
+		[HttpGet]
+        [Route("{id}")]
+		public IActionResult ListarPorID([FromRoute]int id)
+		{
+			var dao = new UsuarioDAO();
+			var usuario = dao.ListarUsuarioPorId(id);
+
+			return Ok(usuario);
+		}
+
 		[HttpPost]
 		public IActionResult Cadastrar([FromBody] UsuarioDTO usuario)
 		{
 			var dao = new UsuarioDAO();
 			dao.CadastrarUsuario(usuario);
+
+			return Ok();
+		}
+
+		[HttpPut]
+		public IActionResult Editar([FromBody] UsuarioDTO usuario)
+		{
+			var dao = new UsuarioDAO();
+			dao.EditarUsuario(usuario);
+
+			return Ok();
+		}
+
+		[HttpDelete]
+		[Route("{id}")]
+		public IActionResult Remover([FromRoute] int id)
+		{
+			var dao = new UsuarioDAO();
+			dao.RemoverUsuario(id);
 
 			return Ok();
 		}

@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\Etec\\2022\\PW2\\CadastroDeUsuarios-API\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj": {}
+    "C:\\Users\\Consultor\\Documents\\Etec\\2023\\PAM II\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj": {}
   },
   "projects": {
-    "C:\\repos\\Etec\\2022\\PW2\\CadastroDeUsuarios-API\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj": {
+    "C:\\Users\\Consultor\\Documents\\Etec\\2023\\PAM II\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\Etec\\2022\\PW2\\CadastroDeUsuarios-API\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Consultor\\Documents\\Etec\\2023\\PAM II\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj",
         "projectName": "CadastroDeUsuariosAPI",
-        "projectPath": "C:\\repos\\Etec\\2022\\PW2\\CadastroDeUsuarios-API\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj",
-        "packagesPath": "C:\\Users\\Lourival\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\Etec\\2022\\PW2\\CadastroDeUsuarios-API\\CadastroDeUsuarios-API\\obj\\",
+        "projectPath": "C:\\Users\\Consultor\\Documents\\Etec\\2023\\PAM II\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj",
+        "packagesPath": "C:\\Users\\Consultor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Consultor\\Documents\\Etec\\2023\\PAM II\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lourival\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Consultor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,12 +71,11 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

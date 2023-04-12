@@ -6,6 +6,6 @@ CREATE TABLE Usuarios(
         Nome VARCHAR(255),
         CPF VARCHAR(255),
         Email VARCHAR(255),
-        Celular VARCHAR(255)
+        Celular VARCHAR(255),
+        Imagem LONGTEXT
 );
-
