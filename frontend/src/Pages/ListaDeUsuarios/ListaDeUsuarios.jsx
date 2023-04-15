@@ -1,6 +1,5 @@
-import Usuario from "../Usuario/Usuario"
+import Usuario from "../../Components/Usuario/Usuario"
 import { useEffect, useState } from "react";
-import CadastroDeUsuario from "../CadastroDeUsuario/CadastroDeUsuario";
 import './ListaDeUsuarios.css';
 import { useNavigate } from "react-router-dom";
 
