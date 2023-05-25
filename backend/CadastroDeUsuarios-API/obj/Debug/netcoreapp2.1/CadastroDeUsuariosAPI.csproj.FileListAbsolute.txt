@@ -34,3 +34,21 @@ C:\Users\Consultor\Documents\Etec\2023\PAM II\cadastro-de-usuarios\backend\Cadas
 C:\Users\Consultor\Documents\Etec\2023\PAM II\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.dll
 C:\Users\Consultor\Documents\Etec\2023\PAM II\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.pdb
 C:\Users\Consultor\Documents\Etec\2023\PAM II\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.genruntimeconfig.cache
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\bin\Debug\netcoreapp2.1\appsettings.json
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\bin\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.deps.json
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\bin\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.runtimeconfig.json
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\bin\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.runtimeconfig.dev.json
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\bin\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.dll
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\bin\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.pdb
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.csproj.AssemblyReference.cache
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.AssemblyInfoInputs.cache
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.AssemblyInfo.cs
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.csproj.CoreCompileInputs.cache
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.RazorAssemblyInfo.cache
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.RazorAssemblyInfo.cs
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.RazorTargetAssemblyInfo.cache
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.dll
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.pdb
+C:\repos\Etec\cadastro-de-usuarios\backend\CadastroDeUsuarios-API\obj\Debug\netcoreapp2.1\CadastroDeUsuariosAPI.genruntimeconfig.cache

@@ -28,9 +28,12 @@
     ".NETCoreApp,Version=v2.1": {
       "CadastroDeUsuariosAPI/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.WebApi.OwinSelfHost": "5.2.9",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
+          "Microsoft.Owin.Host.SystemWeb": "4.2.2",
+          "Microsoft.Owin.Security.OAuth": "4.2.2",
           "MySqlConnector": "1.0.0"
         },
         "runtime": {
@@ -40,7 +43,146 @@
           "CadastroDeUsuariosAPI.dll": {}
         }
       },
+      "Microsoft.AspNet.WebApi.Client/5.2.9": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json.Bson": "1.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {
+            "assemblyVersion": "5.2.9.0",
+            "fileVersion": "5.2.61129.10"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.9": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.9"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "assemblyVersion": "5.2.9.0",
+            "fileVersion": "5.2.61129.10"
+          }
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Owin/5.2.9": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.9",
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.Owin.dll": {
+            "assemblyVersion": "5.2.9.0",
+            "fileVersion": "5.2.61129.10"
+          }
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.Owin.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.OwinSelfHost/5.2.9": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Owin": "5.2.9",
+          "Microsoft.Owin.Host.HttpListener": "2.0.2",
+          "Microsoft.Owin.Hosting": "2.0.2"
+        }
+      },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
+      "Microsoft.Owin/4.2.2": {
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.200.222.26002"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.HttpListener/2.0.2": {
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.HttpListener.dll": {
+            "assemblyVersion": "2.0.2.0",
+            "fileVersion": "2.0.21107.459"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.HttpListener.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.SystemWeb/4.2.2": {
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.200.222.26002"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        }
+      },
+      "Microsoft.Owin.Hosting/2.0.2": {
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Hosting.dll": {
+            "assemblyVersion": "2.0.2.0",
+            "fileVersion": "2.0.21107.459"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Hosting.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/4.2.2": {
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.200.222.26002"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.OAuth/4.2.2": {
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Microsoft.Owin.Security": "4.2.2",
+          "Newtonsoft.Json": "11.0.2",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.200.222.26002"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        }
+      },
       "MySqlConnector/1.0.0": {
         "runtime": {
           "lib/netcoreapp2.1/MySqlConnector.dll": {
@@ -52,15 +194,16 @@
           "lib/netcoreapp2.1/MySqlConnector.dll": {}
         }
       },
-      "Microsoft.AspNet.WebApi.Client/5.2.6": {
-        "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
-          "Newtonsoft.Json.Bson": "1.0.1"
+      "Owin/1.0.0": {
+        "runtime": {
+          "lib/net40/Owin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
-          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
-        },
-        "compileOnly": true
+          "lib/net40/Owin.dll": {}
+        }
       },
       "Microsoft.AspNetCore/2.1.1": {
         "dependencies": {
@@ -101,7 +244,7 @@
       },
       "Microsoft.AspNetCore.App/2.1.1": {
         "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "5.2.6",
+          "Microsoft.AspNet.WebApi.Client": "5.2.9",
           "Microsoft.AspNetCore": "2.1.1",
           "Microsoft.AspNetCore.Antiforgery": "2.1.1",
           "Microsoft.AspNetCore.Authentication": "2.1.1",
@@ -3181,12 +3324,82 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.AspNet.WebApi.Client/5.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cuVhPjjNMSEFpKXweMNBbsG4RUFuuZpFBm8tSyw309U9JEjcnbB6n3EPb4xwgcy9bJ38ctIbv5G8zXUBhlrPWw==",
+      "path": "microsoft.aspnet.webapi.client/5.2.9",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9C0/gBUeMBjorRFSmR5Z2j5wznf9BP5SddN+OZE7X0BpXgivBZTZ42d0h8tIjJzSLHYVCU4HZBf51+cidCY4fQ==",
+      "path": "microsoft.aspnet.webapi.core/5.2.9",
+      "hashPath": "microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Owin/5.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VT7BPTtwZoThLQkdE0Oss6LhifMutNtxOSExVhUqlKl0zrQyIDc6zVt/2+qxjO8+HlEYo+rpF8u0YYKWCt8Jfw==",
+      "path": "microsoft.aspnet.webapi.owin/5.2.9",
+      "hashPath": "microsoft.aspnet.webapi.owin.5.2.9.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.OwinSelfHost/5.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e56ELmOBMO5CRdi8RDKQX9zQlaGLJTjuEcPiIGQCUbukVMZdX807bQXXqw4xHz8fb7IU2rW1w3DsoS7XNPf06w==",
+      "path": "microsoft.aspnet.webapi.owinselfhost/5.2.9",
+      "hashPath": "microsoft.aspnet.webapi.owinselfhost.5.2.9.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-fe1+dpy+eM4IX1zodsvkihO1Spuj0NecfStWzvkYoMo7/ziOsqSv4vFK36ZpBfHa4gpdCEwaU46EPzdq+ZDYhQ==",
       "path": "microsoft.aspnetcore.razor.design/2.1.2",
       "hashPath": "microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512"
+    },
+    "Microsoft.Owin/4.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jt410l/8dvCIguRdU7dupYdm4kGLepVdD8EOTKU4nYZcLRrn6kQYqI6pbJOTJp7Vlm/T2WUF5bzyKK2z29xtjg==",
+      "path": "microsoft.owin/4.2.2",
+      "hashPath": "microsoft.owin.4.2.2.nupkg.sha512"
+    },
+    "Microsoft.Owin.Host.HttpListener/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FvjlLadWzpKE2fZeHoa/d1krcVQ7U5/+D+HC3KL+v+jYyvFsFIobtROX0bTgqWkFYdhS3+AWveck63m4LE6SuA==",
+      "path": "microsoft.owin.host.httplistener/2.0.2",
+      "hashPath": "microsoft.owin.host.httplistener.2.0.2.nupkg.sha512"
+    },
+    "Microsoft.Owin.Host.SystemWeb/4.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MYdqpNXC5xX7pVAnhGDfZvU7ybylYENqnV17XYGGkInk3Hco2Fx8t4nVBXBoAw/3ox6cNTbazq+EiS4Pi9lGQA==",
+      "path": "microsoft.owin.host.systemweb/4.2.2",
+      "hashPath": "microsoft.owin.host.systemweb.4.2.2.nupkg.sha512"
+    },
+    "Microsoft.Owin.Hosting/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FH94pnDTejmN+VicQEKYl6J6L4wMSlDYY61Yykhsc7ruJVUIP2wrts67vkyalbHcqaGNCdpYsChd7IOpXUcDzQ==",
+      "path": "microsoft.owin.hosting/2.0.2",
+      "hashPath": "microsoft.owin.hosting.2.0.2.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security/4.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nEgJYWfSrbp/u2FnIkmiLUuWUyFX8xC/gtnwN9r1rV+iT/E10rMinGbaxQvSHlkhHBnUgzriYwCaMhMExxpyhQ==",
+      "path": "microsoft.owin.security/4.2.2",
+      "hashPath": "microsoft.owin.security.4.2.2.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security.OAuth/4.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y0F0lmDZAdpQn9LMdVwfWwq5JZpLu2OYSdToVwMdneC1AAVvaPxkFW6gnMe1Uox2ZNJwFd8Ytt1lm4eQL7itqw==",
+      "path": "microsoft.owin.security.oauth/4.2.2",
+      "hashPath": "microsoft.owin.security.oauth.4.2.2.nupkg.sha512"
     },
     "MySqlConnector/1.0.0": {
       "type": "package",
@@ -3195,12 +3408,12 @@
       "path": "mysqlconnector/1.0.0",
       "hashPath": "mysqlconnector.1.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNet.WebApi.Client/5.2.6": {
+    "Owin/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
-      "path": "microsoft.aspnet.webapi.client/5.2.6",
-      "hashPath": "microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512"
+      "sha512": "sha512-OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "path": "owin/1.0.0",
+      "hashPath": "owin.1.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore/2.1.1": {
       "type": "package",

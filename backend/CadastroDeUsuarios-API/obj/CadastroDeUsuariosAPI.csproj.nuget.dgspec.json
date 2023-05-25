@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Consultor\\Documents\\Etec\\2023\\PAM II\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj": {}
+    "C:\\repos\\Etec\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Consultor\\Documents\\Etec\\2023\\PAM II\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj": {
+    "C:\\repos\\Etec\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Consultor\\Documents\\Etec\\2023\\PAM II\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj",
+        "projectUniqueName": "C:\\repos\\Etec\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj",
         "projectName": "CadastroDeUsuariosAPI",
-        "projectPath": "C:\\Users\\Consultor\\Documents\\Etec\\2023\\PAM II\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj",
-        "packagesPath": "C:\\Users\\Consultor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Consultor\\Documents\\Etec\\2023\\PAM II\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\obj\\",
+        "projectPath": "C:\\repos\\Etec\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\CadastroDeUsuariosAPI.csproj",
+        "packagesPath": "C:\\Users\\Niuco\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\Etec\\cadastro-de-usuarios\\backend\\CadastroDeUsuarios-API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Consultor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Niuco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +43,10 @@
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.OwinSelfHost": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -59,6 +63,14 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.Owin.Host.SystemWeb": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.Security.OAuth": {
+              "target": "Package",
+              "version": "[4.2.2, )"
             },
             "MySqlConnector": {
               "target": "Package",
