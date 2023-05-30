@@ -1,5 +1,6 @@
 ﻿using CadastroDeUsuariosAPI.DAO;
 using CadastroDeUsuariosAPI.DTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,7 @@ namespace CadastroDeUsuariosAPI.Controllers
 	//Porta de entrada e saída de requisições da API
 	[Route("api/[controller]")]
 	[ApiController]
+    [Authorize]
 	public class UsuarioController : ControllerBase
 	{
 		//Método, rota e status
@@ -18,6 +20,14 @@ namespace CadastroDeUsuariosAPI.Controllers
 			var usuarios = dao.ListarUsuario();
 
 			return Ok(usuarios);
+		}
+
+		[HttpGet]
+
+		[Route("asd")]
+		public IActionResult Listar2()
+		{
+			return Ok("Ok");
 		}
 
 		[HttpGet]

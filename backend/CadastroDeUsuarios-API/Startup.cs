@@ -41,10 +41,13 @@ namespace CadastroDeUsuarios_API
 			{
 				options.TokenValidationParameters = new TokenValidationParameters
 				{
-					ValidateIssuerSigningKey = true,
+					ValidateIssuerSigningKey = false,
 					IssuerSigningKey = key,
 					ValidateIssuer = false,
-					ValidateAudience = false
+					ValidateAudience = false,
+					ValidateLifetime = true, // Habilitar a validação de expiração do token
+					ClockSkew = TimeSpan.Zero // Definir a margem de tempo zero para a validação do tempo de expiração
+
 				};
 			});
 
@@ -68,6 +71,7 @@ namespace CadastroDeUsuarios_API
 			.AllowAnyMethod()
 			.AllowAnyHeader());
 
+			app.UseAuthentication();
 
 			app.UseHttpsRedirection();
 			app.UseMvc();

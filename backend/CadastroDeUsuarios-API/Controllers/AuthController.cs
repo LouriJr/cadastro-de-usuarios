@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CadastroDeUsuariosAPI.DAO;
+using CadastroDeUsuariosAPI.DTO;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -14,33 +16,39 @@ namespace CadastroDeUsuariosAPI.Controllers
     public class AuthController : ControllerBase
     {
 
-        [HttpGet]
+        [HttpPost]
         [Route("Login")]
-        public IActionResult Cadastrar()
+        public IActionResult Login([FromForm] UsuarioDTO usuario)
         {
+            var dao = new UsuarioDAO();
+            var usuarioLogado = dao.Login(usuario);
 
-            var token = GenerateJwtToken("", "PU8a9W4sv2opkqlOwmgsn3w3Innlc4D5");
-            return Ok(token);
+            if (usuarioLogado.ID == 0)
+            {
+                return NotFound("Usuário e/ou senha inválidos");
+            }
+
+            var token = GenerateJwtToken(usuarioLogado, "PU8a9W4sv2opkqlOwmgsn3w3Innlc4D5");
+            return Ok(new { token });
         }
 
-        string GenerateJwtToken(string username, string secretKey)
+        string GenerateJwtToken(UsuarioDTO usuario, string secretKey)
         {
-
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name, "nome-do-usuario"),
-                    new Claim(ClaimTypes.Email, "email-do-usuario"),
-
-                };
-
+            {
+                new Claim("ID", usuario.ID.ToString()),
+                new Claim("Email", usuario.Email),
+                new Claim("CPF", usuario.CPF)
+            };
 
             var token = new JwtSecurityToken(
-                "","",
+                "APIUsuarios",
+                "APIUsuarios",
                 claims,
-                expires: DateTime.UtcNow.AddMinutes(30),
+                expires: DateTime.UtcNow.AddMinutes(5),
                 signingCredentials: credentials
             );
 
