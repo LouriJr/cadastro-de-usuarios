@@ -23,14 +23,6 @@ namespace CadastroDeUsuariosAPI.Controllers
 		}
 
 		[HttpGet]
-
-		[Route("asd")]
-		public IActionResult Listar2()
-		{
-			return Ok("Ok");
-		}
-
-		[HttpGet]
         [Route("{id}")]
 		public IActionResult ListarPorID([FromRoute]int id)
 		{

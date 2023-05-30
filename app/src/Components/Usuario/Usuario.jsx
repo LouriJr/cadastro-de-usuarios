@@ -1,7 +1,7 @@
 
 import { useNavigation } from '@react-navigation/native';
 import { Text, View, Image, Button } from 'react-native';
-
+import { HeaderRequisicao } from '../../AuthContext';
 
 export default function Usuario({ usuario }) {
     const navigation = useNavigation();
@@ -9,12 +9,20 @@ export default function Usuario({ usuario }) {
     function navegar() {
         navigation.navigate("EditarUsuario", { id: usuario.id });
     }
-    function removerUsuario(){
+    async function removerUsuario() {
+        const headers = await HeaderRequisicao();
+           
         fetch("https://localhost:44340/api/usuario/" + usuario.id, {
             method: "DELETE",
+            headers
         })
-            .then((usuario) => {
-                alert("Usuario removido com sucesso!");
+            .then((response) => {
+                if (response.ok) {
+                    alert("Usuario removido com sucesso!");
+                }
+                else {
+                    alert("Erro ao remover usuário");
+                }
             })
             .catch((error) => {
                 alert("Erro ao remover usuário");
@@ -28,7 +36,7 @@ export default function Usuario({ usuario }) {
             <Text>Email: {usuario.email}</Text>
             <Image source={{ uri: usuario.imagem }} style={{ width: 200, height: 200 }}></Image>
             <Button title="Editar" onPress={() => navegar(usuario.id)}></Button>
-            <Button title="Remover" onPress={ removerUsuario}></Button>
+            <Button title="Remover" onPress={removerUsuario}></Button>
         </View>
     );
 }

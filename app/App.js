@@ -21,3 +21,6 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+// npx expo install @react-native-async-storage/async-storage
+// npm install jwt-decode

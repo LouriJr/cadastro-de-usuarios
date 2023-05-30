@@ -18,14 +18,15 @@ export default function Login() {
   }
 
   useEffect(() => {
-    const verificarLogin = async () => {
-      const usuarioLogado = await ChecarLoginUsuario();
-      if (usuarioLogado) {
-        Navegar("Home");
-      }
-    };
     verificarLogin();
   });
+
+  async function verificarLogin() {
+    const usuarioLogado = await ChecarLoginUsuario();
+    if (usuarioLogado) {
+      Navegar("Home");
+    }
+  };
 
   function Login() {
     fetch("https://localhost:44340/api/auth/login", {

@@ -1,12 +1,17 @@
 import { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import Usuario from '../../Components/Usuario/Usuario';
+import { HeaderRequisicao } from '../../AuthContext';
 
 export default function ListagemUsuarios() {
+    const [usuarios, setUsuarios] = useState([]);
 
-    useEffect(() => {
+    async function ListarUsuarios() {
+        const headers = await HeaderRequisicao();
+
         fetch("https://localhost:44340/api/usuario", {
             method: "GET",
+            headers
         })
             .then((response) => response.json())
             .then((json) => {
@@ -15,9 +20,12 @@ export default function ListagemUsuarios() {
             .catch((error) => {
                 alert("Erro ao buscar usuários");
             });
+    }
+    
+    useEffect(() => {
+        ListarUsuarios();
     }, []);
 
-    const [usuarios, setUsuarios] = useState([]);
     return (
         <View>
             {

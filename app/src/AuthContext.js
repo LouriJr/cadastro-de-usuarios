@@ -9,6 +9,11 @@ export async function SalvarJWT(jwtData) {
 }
 
 export async function HeaderRequisicao() {
+const usuarioLogado = await ChecarLoginUsuario();
+
+if(usuarioLogado==false){
+  Navegar('Login')
+}
 
   const token = await AsyncStorage.getItem("@jwt");
   return new Headers({
@@ -18,7 +23,7 @@ export async function HeaderRequisicao() {
 }
 
 export async function ChecarLoginUsuario() {
-    debugger;
+    
   const token = await AsyncStorage.getItem("@jwt");
   if (!token) {
     return false;
@@ -29,7 +34,7 @@ export async function ChecarLoginUsuario() {
 
   if (actualDate > userData.exp) {
     //usuario expirado
-    await AsyncStorage.setItem("@jwt", null);
+    await AsyncStorage.remove("@jwt");
     return false;
   }
 
